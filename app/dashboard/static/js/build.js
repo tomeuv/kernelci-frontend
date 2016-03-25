@@ -58,7 +58,8 @@
             'app/view-socs-soc-job': 'app/view-socs-soc-job.2016.6',
             'app/view-socs-soc-job-kernel': 'app/view-socs-soc-job-kernel.2016.6',
             'app/view-sponsors': 'app/view-sponsors.2016.6',
-            'app/view-stats': 'app/view-stats.2016.6'
+            'app/view-stats': 'app/view-stats.2016.6',
+            'app/view-tests-all': 'app/view-tests-all.2016.11'
         }
     },
     shim: {
@@ -106,6 +107,7 @@
         {name: 'app/view-socs-soc.2016.6'},
         {name: 'app/view-sponsors.2016.6'},
         {name: 'app/view-stats.2016.6'},
+        {name: 'app/view-tests-all.2016.11'},
         {name: 'kci-boot-compare'},
         {name: 'kci-boots-all'},
         {name: 'kci-boots-all-job'},
