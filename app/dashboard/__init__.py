@@ -197,10 +197,19 @@ def ajax_boot_regressions():
     else:
         abort(403)
 
+
 @app.route("/_ajax/test/suite")
 def ajax_test_suite():
     if validate_csrf(request.headers.get(CSRF_TOKEN_H, None)):
         return backend.ajax_get(request, app_conf_get("TEST_SUITE_API_ENDPOINT"), timeout=60 * 20)
+    else:
+        abort(403)
+
+
+@app.route("/_ajax/test/set")
+def ajax_test_set():
+    if validate_csrf(request.headers.get(CSRF_TOKEN_H, None)):
+        return backend.ajax_get(request, app_conf_get("TEST_SET_API_ENDPOINT"), timeout=60 * 20)
     else:
         abort(403)
 
